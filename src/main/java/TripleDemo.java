@@ -4,6 +4,10 @@ import org.eclipse.collections.impl.tuple.Tuples;
 
 public class TripleDemo {
 
+    /*
+    List of triples containing: (String CountryName, int DialingCode, boolean EuMember)
+    Printing names of eu countries.
+     */
     public void printEuCountries() {
         var countries = Lists.immutable.of(
                 Tuples.triple("Netherlands", 31, true),
@@ -18,6 +22,9 @@ public class TripleDemo {
         euCountries.forEach(System.out::println);
     }
 
+    /*
+    returning a triple contraining starttime, endtime and result
+     */
     public Triple factorialCalculation(int n) {
         var start = System.currentTimeMillis();
         long fact = 1;
